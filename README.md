@@ -18,13 +18,22 @@ First, by reading through `parkinsons.name` file, I noticed the following
 
 hence linear regression models might not be approiate for this problem. Identifying parkinsons is a classification problem. So using SVM might be a good choice, I will also give logstic regression a go as it  also works for classification problem.
 
-## Step X Potential Applications
+## Step 3 Assessing and Toning Models
+I examined both models from 3 aspects:
+	- mean score
+	- ROC AUC score
+	- Confusion matrix
+Before toning the models, I found the accuracy of the SVM is not as good as I expected, as I believe SVM is more suitable for this problem. 
 
-This model does only one simple thing -- **Predict parkinsons**. It sounds a bit boring. However from the dataset, we noticed that  voice data is used to predict parkinsons. That means any smart devices that can collect and process voice could use this model to predict whether the user has parkinsons or not.
+I tried using different kernels for the SVM model and then toned other parameters for the polynomial kernel. It turned out beating the logistic regression model.
+
+## Step 4 Potential Applications
+
+This model does only one simple thing -- **Predict parkinsons**. It sounds a bit boring. However the advantage of this model is that it uses speech data to predict parkinsons That means any smart devices that can collect and process voice could use this model to predict whether the user has parkinsons or not.
 
 For example, If the model determines the wearer has high probability to get parkinsons. It can warn the wearer and his/her emergency contacts. Even can contact for medical support. 
 
-Such device can be very small. such as smart watch or wrist band, wireless earbuds and hearing aid devices. I believe in the near future, Because of 5G and IoT, These devices will be empowered by these new techs and can be more accurate. For example, smart devices that have less computing power can send data to the cloud server to do the prediction as the server has a constantly envolving model, 
+Such device can be very small. such as smart watch or wrist band, wireless earbuds and hearing aid devices. I believe in the near future, Because of population of 5G and IoT, The form factors of these devices can be much more smaller and more power efficient as models are stored in the cloud. 
 
 ## TODO List
 	- [] use a larger dataset
