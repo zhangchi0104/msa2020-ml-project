@@ -1,0 +1,8 @@
+{
+    "name": "jupyter",
+    "image": "jupyter/tensorflow-notebook",
+    "extensions": [
+        "ms-python.python"
+    ],
+    "forwardPorts": [8080]
+}

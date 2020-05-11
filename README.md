@@ -1,4 +1,21 @@
+
 # Parkinsons Analysis
+## Setup
+### Azure Notebooks
+Open this project straightaway in azure notebooks
+### Anaconda
+Just open up `parkinsons.ipynb` in jupyter
+
+### Miniconda 
+```bash
+conda create --name parkinsons --file requirements.txt
+```
+
+### VS Code + docker
+1. install the `ms-vscode-remote.vscode-remote-extensionpack` from extension market place
+2. select the remote development icon from the side pannel
+3. select reopen in container
+
 
 ## Step 1 - Visuallising Data 
 My first step is to visuallise data to obtain some basic ideas about how parkinsons is related to the data in the dataset.
@@ -35,6 +52,3 @@ For example, If the model determines the wearer has high probability to get park
 
 Such device can be very small. such as smart watch or wrist band, wireless earbuds and hearing aid devices. I believe in the near future, Because of population of 5G and IoT, The form factors of these devices can be much more smaller and more power efficient as models are stored in the cloud. 
 
-## TODO List
-	- [] use a larger dataset
-	- [] tone the SVM model
